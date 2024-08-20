@@ -25,6 +25,7 @@ SELECT * FROM class8;
 SELECT id, name, grade FROM class8;
 SELECT distinct grade FROM class8;
 
+-- Operators --
 -- COMPARISION OPERATOR
 SELECT * FROM class8 WHERE marks > 90;
 SELECT * FROM class8 WHERE grade = "A";
