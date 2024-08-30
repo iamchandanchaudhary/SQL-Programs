@@ -33,3 +33,8 @@ SELECT MIN(marks) FROM class9;
 SELECT SUM(marks) FROM class9;
 SELECT AVG(marks) FROM class9;
 SELECT COUNT(marks) FROM class9;
+
+-- Group by Clause
+SELECT grade FROM class9 GROUP BY grade;
+SELECT grade, COUNT(grade) FROM class9 GROUP BY grade;
+SELECT grade, name, COUNT(grade) FROM class9 GROUP BY grade, name;
