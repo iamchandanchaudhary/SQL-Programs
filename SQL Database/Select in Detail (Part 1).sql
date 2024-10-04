@@ -36,6 +36,8 @@ SELECT * FROM class8 WHERE marks > 90 OR grade = "A";
 
 -- ARITHMETIC OPERATOR
 SELECT * FROM class8 WHERE marks+10 >= 100;
+SELECT marks+5 FROM class8 WHERE id = 4;
+SELECT marks+5 FROM class8;
 
 -- LOGICAL OPERATOR
 SELECT * FROM class8 WHERE marks BETWEEN 75 AND 90;
