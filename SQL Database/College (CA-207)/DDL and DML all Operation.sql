@@ -18,15 +18,10 @@ VALUES
     (3, "Avinash Singh", 21);
 
 SET SQL_SAFE_UPDATES = 0;
-    
-UPDATE class20 SET age = 25 WHERE id = 3;
 
-DELETE FROM class20 WHERE id = 3;
-
+-- DDL Queries
 ALTER TABLE class20
 DROP COLUMN age;
-
-UPDATE class20 SET name = "Aman Singh" WHERE id = 2;
 
 SELECT * FROM class20;
 
@@ -36,3 +31,9 @@ RENAME TO class21;
 SELECT * FROM class21;
 
 TRUNCATE TABLE class21;
+
+-- DML Queries
+UPDATE class20 SET age = 25 WHERE id = 3;
+UPDATE class20 SET name = "Aman Singh" WHERE id = 2;
+
+DELETE FROM class20 WHERE id = 3;
