@@ -18,6 +18,7 @@ VALUES
     
 SELECT * FROM class28;
 
+-- Student those are above the avg marks
 SELECT AVG(marks) FROM class28;
 
 SELECT name, marks FROM class28 WHERE marks > 85.6;

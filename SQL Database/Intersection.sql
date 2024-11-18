@@ -32,4 +32,6 @@ VALUES
     
 SELECT * FROM class27;
 
-SELECT name FROM class26 INTERSECT SELECT name FROM class27;
+SELECT name FROM class26 
+INTERSECT 
+SELECT name FROM class27;
