@@ -17,17 +17,23 @@ VALUES
     
 SELECT * FROM Teacher;
 
--- 1st
+-- 1st Part
 SELECT * FROM Teacher WHERE salary > 55000;
 
--- 2nd
+-- 2nd Part
 ALTER TABLE Teacher
 CHANGE COLUMN salary ctc INT;
 
 SET SQL_SAFE_UPDATES = 0;
--- 3rd
+-- 3rd Part
 UPDATE Teacher SET ctc = (ctc + (0.25 * ctc));
 
--- 4th
+-- 4th Part
 ALTER TABLE Teacher
 ADD COLUMN city VARCHAR(20) default("Gurgaon");
+
+-- 5th Part
+ALTER TABLE Teacher
+DROP city;
+
+SELECT * FROM Teacher;
