@@ -12,4 +12,16 @@ let createRandomUser = () => {
     };
   }
 
-  console.log(createRandomUser());
+console.log(createRandomUser());
+
+// Generating Custom Data
+let getRandomUser = () => {
+    return {
+      id: faker.string.uuid(),
+      username: faker.internet.username(),
+      email: faker.internet.email(),
+      password: faker.internet.password(),
+    };
+  }
+
+  console.log(getRandomUser());
