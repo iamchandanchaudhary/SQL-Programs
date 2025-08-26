@@ -1,1 +1,0 @@
-Node framework to generate Fake data: https://www.npmjs.com/package/@faker-js/faker
