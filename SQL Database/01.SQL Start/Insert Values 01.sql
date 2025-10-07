@@ -1,6 +1,5 @@
-CREATE DATABASE school;
-
-use school;
+CREATE DATABASE IF NOT EXISTS chandan_clg;
+use chandan_clg;
 
 CREATE TABLE teacher(
 	id INT PRIMARY KEY,
@@ -9,9 +8,8 @@ CREATE TABLE teacher(
     subject VARCHAR(50)
 );
 
--- inserting single values
+-- inserting values
 INSERT INTO teacher
-(id, name, age, subject)
 VALUES
 	(1, "Vinod Kumar", 36, "English"),
     (2, "Bipin Chaudhary", 23, "Hindi"),

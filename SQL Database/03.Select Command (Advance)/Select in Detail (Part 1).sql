@@ -1,6 +1,7 @@
-CREATE DATABASE chandan_college;
+CREATE DATABASE IF NOT EXISTS chandan_clg;
 
-use chandan_college;
+use chandan_clg;
+DROP DATABASE chandan_clg;
 
 CREATE TABLE class8(
 	id INT PRIMARY KEY,
@@ -21,9 +22,9 @@ VALUES
     
 INSERT INTO class8 VALUES (6, "Ajay Kumar", 78, "B", "Sonha");
     
-SELECT * FROM class8;
-SELECT id, name, grade FROM class8;
-SELECT distinct grade FROM class8;
+SELECT * FROM class8; -- Show all data
+SELECT id, name, grade FROM class8; -- Show specific data
+SELECT distinct grade FROM class8; -- Show common value of single column
 
 -- Operators --
 -- COMPARISION OPERATOR
