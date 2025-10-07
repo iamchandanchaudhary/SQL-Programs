@@ -1,6 +1,6 @@
-CREATE DATABASE college;
+CREATE DATABASE chandan_clg;
 
-use college;
+use chandan_clg;
 
 -- creating table
 CREATE TABLE student(
