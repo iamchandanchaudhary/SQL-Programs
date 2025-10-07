@@ -1,6 +1,10 @@
 CREATE DATABASE chandan_college24;
 use chandan_college24;
 
+-- => Primary Key = Unique + Not Null
+-- => Unique Key = 
+-- => Not Null = 
+
 CREATE TABLE class34 (
 	id INT PRIMARY KEY,
     name VARCHAR(30) UNIQUE,
