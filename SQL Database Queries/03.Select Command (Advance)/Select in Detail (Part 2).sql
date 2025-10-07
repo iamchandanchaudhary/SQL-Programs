@@ -1,6 +1,5 @@
-CREATE DATABASE chandan_college2;
-
-use chandan_college2;
+CREATE DATABASE IF NOT EXISTS chandan_clg;
+use chandan_clg;
 
 CREATE TABLE class9(
 	id INT PRIMARY KEY,

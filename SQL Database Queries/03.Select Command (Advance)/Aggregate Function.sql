@@ -1,5 +1,5 @@
-CREATE DATABASE chandan_college23;
-use chandan_college23;
+CREATE DATABASE IF NOT EXISTS chandan_clg;
+use chandan_clg;
 
 CREATE TABLE class33 (
 	id INT PRIMARY KEY,
@@ -13,12 +13,13 @@ INSERT INTO class33
 VALUES
 	(1, "Arvind Kumar", 93, "A", "Kaptanganj"),
     (2, "Deepanshu Yadav", 85, "B", "Siddarth Nagar"),
-    (3, "Devendra Jaishwal", 97, "A+", "Gorakhpur"),
+    (3, "Devendra Jaishwal", 87, "A+", "Gorakhpur"),
     (4, "Chandan Kumar", 79, "C", "Goapal Gnaj"),
     (5, "Ayush Singh", 72, "C", "Kannauj"),
     (6, "Shivam Singh", 82,"B", "Jabal Pur");
 
 SELECT * FROM class33;
+drop table class33;
 
 -- Aggregate Function
 SELECT MAX(marks) FROM class33;

@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS chandan_clg;
-
 use chandan_clg;
+
 DROP DATABASE chandan_clg;
 
 CREATE TABLE class8(
