@@ -1,5 +1,5 @@
 CREATE DATABASE temp1;
--- drop database temp1; 
+DROP DATABASE temp1; 
 
-create database temp2;
+CREATE DATABASE temp2;
 DROP DATABASE temp2;

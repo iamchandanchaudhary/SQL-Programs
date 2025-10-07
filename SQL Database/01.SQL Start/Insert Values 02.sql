@@ -9,15 +9,18 @@ CREATE TABLE student5(
     roll_no INT NOT NULL
 );
 
+-- inserting single values
 INSERT INTO student5 VALUES(1, "Chandan Chaudhary", 18, 230010);
 INSERT INTO student5 VALUES(5, "Vinay Yadav", 21, 210020);
 
+-- inserting multiple values
 INSERT INTO student5 
 (id, name, age, roll_no)
 VALUES 
 	(2, "Vicky Verma", 20, 230011),
 	(3, "Vishal Verma", 20, 230013);
     
+-- inserting another value
 INSERT INTO student5 
 (id, name, age, roll_no)
 VALUES 

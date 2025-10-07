@@ -1,6 +1,6 @@
 CREATE DATABASE school;
 
-USE school;
+use school;
 
 CREATE TABLE teacher(
 	id INT PRIMARY KEY,
@@ -9,6 +9,7 @@ CREATE TABLE teacher(
     subject VARCHAR(50)
 );
 
+-- inserting single values
 INSERT INTO teacher
 (id, name, age, subject)
 VALUES
