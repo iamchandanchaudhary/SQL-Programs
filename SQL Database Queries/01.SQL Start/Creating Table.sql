@@ -1,5 +1,4 @@
-CREATE DATABASE chandan_clg;
-
+CREATE DATABASE IF NOT EXISTS chandan_clg;
 use chandan_clg;
 
 -- creating table
@@ -22,6 +21,9 @@ CREATE TABLE teacher(
     age INT NOT NULL,
     subject VARCHAR(30)
 );
+
+-- deleting data from the table
+TRUNCATE TABLE student;
 
 -- drop(deleting) table
 DROP TABLE teacher;
