@@ -1,5 +1,5 @@
-CREATE DATABASE chandan_college12;
-use chandan_college12;
+CREATE DATABASE IF NOT EXISTS chandan_clg;
+use chandan_clg;
 
 CREATE TABLE class21 (
 	id INT PRIMARY KEY,
@@ -32,6 +32,10 @@ VALUES
 SELECT * FROM courses;
 
 -- Right Join
+SELECT * FROM class21
+RIGHT JOIN courses
+ON class21.id = courses.id;
+
 SELECT * FROM class21 as cl
 RIGHT JOIN courses as sub
 ON cl.id = sub.id;

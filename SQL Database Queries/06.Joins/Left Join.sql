@@ -1,6 +1,5 @@
-CREATE DATABASE chandan_college10;
-
-use chandan_college10;
+CREATE DATABASE IF NOT EXISTS chandan_clg;
+use chandan_clg;
 
 -- Left Table
 CREATE TABLE class19 (
@@ -20,12 +19,12 @@ VALUES
 SELECT * FROM class19;
 
 -- Right Table
-CREATE TABLE subjects (
+CREATE TABLE sub (
 	id INT PRIMARY KEY,
     subject VARCHAR(20)
 );
 
-INSERT INTO subjects
+INSERT INTO sub
 VALUES
 	(1, "Java"),
     (3, "C++"),
@@ -33,13 +32,13 @@ VALUES
     (6, "Web Deb"),
     (7, "JS");
     
-SELECT * FROM subjects;
+SELECT * FROM sub;
 
 -- Left Join
 SELECT * FROM class19 
-LEFT JOIN subjects
-ON class19.id = subjects.id;
+LEFT JOIN sub
+ON class19.id = sub.id;
 
 SELECT * FROM class19 as c
-LEFT JOIN subjects as s
+LEFT JOIN sub as s
 ON c.id = s.id;
