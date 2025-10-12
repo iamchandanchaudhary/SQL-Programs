@@ -1,15 +1,12 @@
-CREATE DATABASE chandan_college3;
+CREATE DATABASE IF NOT EXISTS chandan_clg;
+use chandan_clg;
 
-use chandan_college3;
-
-CREATE TABLE class10(
+CREATE TABLE class10 (
 	id INT PRIMARY KEY,
     name VARCHAR(20),
     age INT NOT NULL,
     marks INT NOT NULL
 );
-
-SELECT * FROM class10;
 
 INSERT INTO class10
 (id, name, age, marks)
@@ -18,6 +15,9 @@ VALUES
     (2, "Deepanshu Yadav", 19, 92.2),
     (3, "Dev Jaishwal", 21, 91.3);
     
+SELECT * FROM class10;
+
+-- Alter
 ALTER TABLE class10
 DROP COLUMN age;
 

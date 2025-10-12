@@ -1,20 +1,19 @@
-CREATE DATABASE chandan_college8;
+CREATE DATABASE IF NOT EXISTS chandan_clg;
+use chandan_clg;
 
-use chandan_college8;
-
-CREATE TABLE class15(
+CREATE TABLE class15 (
 	id INT PRIMARY KEY,
     name VARCHAR(30),
     gender VARCHAR(10)
 );
-
-SELECT * FROM class15;
 
 INSERT INTO class15
 VALUES
 	(1, "Chandan Chaudhary", "Male"),
     (2, "Anand Gupta", "Male"),
     (3, "Sadhvi Singh", "Female");
+    
+SELECT * FROM class15;
     
 -- Adding Column in the Table
 ALTER TABLE class15
@@ -41,3 +40,4 @@ ALTER TABLE class16
 MODIFY id VARCHAR(5);
 
 SELECT * FROM class16;
+DROP TABLE class16;
