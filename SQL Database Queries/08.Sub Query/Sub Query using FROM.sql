@@ -20,6 +20,7 @@ VALUES
     (107, "Sanjay", 76, "B", "Lucknow");
     
 -- DROP TABLE class30;
+
 SELECT * FROM class30
 WHERE marks = (SELECT MAX(marks) FROM class30
 WHERE city = "Lucknow");

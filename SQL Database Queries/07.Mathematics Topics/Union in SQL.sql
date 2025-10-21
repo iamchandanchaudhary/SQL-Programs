@@ -37,7 +37,11 @@ SELECT name FROM class26
 UNION
 SELECT name FROM class27;
 
+SELECT id, name FROM class26
+UNION
+SELECT id, name FROM class27;
+
 -- UNION ALL ==> Get all Values
-SELECT name FROM class26
+SELECT id, name FROM class26
 UNION ALL
-SELECT name FROM class27;
+SELECT id, name FROM class27;
