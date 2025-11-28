@@ -16,4 +16,4 @@ try {
     console.log(err);
 }
 
-// connection.end();
+connection.end(); // to close the connection

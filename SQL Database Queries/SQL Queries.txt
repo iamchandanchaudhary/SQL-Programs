@@ -1,0 +1,19 @@
+
+    SELECT * 
+    FROM Students
+    ORDER BY marks DESC
+    LIMIT 2 OFFSET 2;
+
+    INSERT INTO Orders (order_id, order_date, delivery_time)
+    VALUES (101, '2025-10-30', '14:25:00');
+
+    SELECT 
+        YEAR(order_date) AS Year,
+        MONTH(order_date) AS Month,
+        DAY(order_date) AS Day
+    FROM Orders;
+
+    SELECT 
+        HOUR(delivery_time) AS Hour,
+        MINUTE(delivery_time) AS Minute
+    FROM Orders;
